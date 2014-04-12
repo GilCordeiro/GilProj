@@ -1,1 +1,17 @@
+<<<<<<< HEAD
 puts 'Ola mundo!'
+=======
+require 'colorize'
+class Main
+	def initialize
+		puts 'Iniciei!'.colorize(:blue)
+	end
+
+	def hello
+		puts 'Hello'.colorize(:light_blue)
+	end
+end
+
+main_objs = Main.new
+main_objs.hello
+>>>>>>> 75ce866b881e6b7dd8192d0127efc4d5bce3d01b
