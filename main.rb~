@@ -1,7 +1,7 @@
 require 'colorize'
 class Main
 	def initialize
-		puts 'Iniciei!'.colorize(:blue)
+		puts 'Iniciei!'.colorize(:light_green)
 	end
 
 	def hello
