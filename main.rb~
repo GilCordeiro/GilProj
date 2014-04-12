@@ -1,17 +1,20 @@
-<<<<<<< HEAD
-puts 'Ola mundo!'
-=======
+# inclusao da gem (framework): colorize
 require 'colorize'
+
+# Definicao da classe
 class Main
+	# defini;cão do construtor
 	def initialize
-		puts 'Iniciei!'.colorize(:blue)
+		puts 'Iniciei!'.colorize(:light_green)
 	end
 
+	# Defincao de um metodo da classe
 	def hello
 		puts 'Hello'.colorize(:light_blue)
 	end
 end
 
+# instancia da classe (objeto)
 main_objs = Main.new
+# chamada do metodo
 main_objs.hello
->>>>>>> 75ce866b881e6b7dd8192d0127efc4d5bce3d01b
