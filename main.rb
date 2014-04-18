@@ -14,7 +14,9 @@ class Main
 	end
 	# Cálculos de Matemática
 	def soma num_a, num_b
+		return num_a + num_b	# Aborta a função já retornando e nada daqui para baixo executa	
 		puts 'Soma: ' + "#{(num_a + num_b)}".colorize(:green)
+		
 	end
 
 	def subtracao(num_a, num_b)
@@ -35,8 +37,17 @@ end
 main_objs = Main.new
 # chamada do metodo
 main_objs.hello
-main_objs.soma(2,3)
+soma_resultado = main_objs.soma(2,3)
 puts 'Subtracao: ' + main_objs.subtracao(3,3).colorize(:red)
+
+if soma_resultado > 0
+	puts 'é positivo'
+else
+	puts 'é negativo'
+end
+
+if soma_resultado > 0 then puts 'é positivo' else puts 'negativo' end
+
 
 # Quando usar parenteses: quando há chamada encadeada, exemplo:
 # obj.metodo(a,b).sub_metodo
