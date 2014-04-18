@@ -12,7 +12,7 @@ class Main
 	def hello
 		puts 'Hello'.colorize(:light_blue)
 	end
-	# Operações Matemática
+	# Cálculos de Matemática
 	def soma num_a, num_b
 		puts 'Soma: ' + "#{(num_a + num_b)}".colorize(:green)
 	end
